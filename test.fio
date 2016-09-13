@@ -1,0 +1,15 @@
+[global]
+ioengine=libaio
+direct=1
+size=8g
+group_reporting
+thread
+filename=fio-test-file
+iodepth=32
+
+[seq-read-1]
+loops=50
+runtime=480
+rw=read
+bs=1M
+stonewall
